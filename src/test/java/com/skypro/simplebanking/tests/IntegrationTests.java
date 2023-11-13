@@ -54,12 +54,13 @@ public class IntegrationTests {
 
     @Autowired
     private UserService userService;
+
     private PasswordEncoder passwordEncoder;
 
     @Container
     private static final PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:latest")
             .withUsername("postgres")
-            .withPassword("73aberiv");
+            .withPassword("7899"); //перепутала пароли
 
     @DynamicPropertySource
     static void postgresProperties(DynamicPropertyRegistry registry) {
