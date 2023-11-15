@@ -1,6 +1,6 @@
 package com.skypro.simplebanking.entity;
-
 import javax.persistence.*;
+
 
 @Entity
 @Table(name = "accounts")
